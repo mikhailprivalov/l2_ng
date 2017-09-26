@@ -1,5 +1,5 @@
 {
-  "name": "L2 NG",
+  "name": "L2NG",
   "version": "1.0.0",
   "description": "L2 NG",
   "author": "Mikhail Privalov <n5250@ya.ru>",
@@ -13,7 +13,9 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "bootstrap-vue": "^1.0.0-beta.9",
     "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0"
   },
