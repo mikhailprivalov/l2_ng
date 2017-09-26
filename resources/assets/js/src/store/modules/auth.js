@@ -1,6 +1,7 @@
 import * as types from '../mutation-types'
 
 const state = {
+  pending: false,
   isLoggedIn: !!localStorage.getItem('token')
 }
 
