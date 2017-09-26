@@ -1,9 +1,15 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import * as auth from './modules/auth'
+import auth from './modules/auth'
 
 Vue.use(Vuex)
 
+const debug = process.env.NODE_ENV !== 'production'
+
 export default new Vuex.Store({
-  auth
+  namespaced: false,
+  modules: {
+    auth
+  },
+  strict: debug
 })
