@@ -1,8 +1,8 @@
 {
-  "name": "vue-django-webpack",
+  "name": "L2 NG",
   "version": "1.0.0",
-  "description": "boiler plate for django vue webpack and django",
-  "author": "Long Tran <longtm.it@gmail.com>",
+  "description": "L2 NG",
+  "author": "Mikhail Privalov <n5250@ya.ru>",
   "private": true,
   "scripts": {
     "dev": "node resources/assets/js/build/dev-server.js",
