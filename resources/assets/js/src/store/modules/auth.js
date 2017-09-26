@@ -17,7 +17,25 @@ const mutations = {
   }
 }
 
+const actions = {
+  login ({ commit }, creds) {
+    commit(types.LOGIN)
+    return new Promise(resolve => {
+      setTimeout(() => {
+        localStorage.setItem('token', 'JWT')
+        commit(types.LOGIN_SUCCESS)
+        resolve()
+      }, 1000)
+    })
+  },
+  logout ({ commit }) {
+    localStorage.removeItem('token')
+    commit(types.LOGOUT)
+  }
+}
+
 export default {
   state,
-  mutations
+  mutations,
+  actions
 }
